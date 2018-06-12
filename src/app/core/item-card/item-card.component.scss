@@ -1,0 +1,79 @@
+$blue : #0275d8;
+
+* {
+    transition: all .2s ease;
+}
+
+.card {
+    width: 200px;
+    border: none;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+    margin: 20px 5px 0;
+    cursor: pointer;
+    display: inline-block;
+    .item-img {
+        width: 100%;
+        overflow: hidden;
+        height: 150px;
+        box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
+        border-radius: 2px;
+        background: transparent;
+    }
+    .categorey {
+        display: block;
+        text-align: center;
+        margin: 10px auto 0;
+        color: #000000;
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 18px;
+    }
+    .item-name {
+        display: block;
+        margin: 10px auto 0;
+        color: $blue;
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 18px;
+        text-align: center;
+    }
+    .item-desc {
+        font-size: .9em;
+        color: #777;
+        margin: 10px auto 0;
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+    hr {
+        width: 90%;
+        margin: 10px auto 0;
+    }
+    footer {
+        margin: 10px 20px;
+    }
+    .price {
+        display: inline-block;
+        color: #000000;
+        font-weight: 600;
+        width: 50%;
+    }
+    .wishlist {
+        width: 20px;
+        float: right;
+        fill: #777;
+        margin-left: 10px;
+        &.added {
+            fill: #000000;
+        }
+        &:hover {
+            transform: scale(1.2);
+        }
+        &:active {
+            transform: scale(1);
+        }
+    }
+    &:hover {
+    box-shadow: 0 0px 10px 0 rgba(0,0,0,.6), 0 0px 15px 0 rgba(0,0,0,.12);       
+    }
+}

@@ -1,0 +1,50 @@
+$blue : #4285f4;
+@mixin button {
+    padding: .85rem 2.13rem;
+    background: #2bbbad;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .05em;
+    font-size: .8rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    &:hover {
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.6), 0 2px 10px 0 rgba(0,0,0,.12);
+        background: darken($color: #2bbbad, $amount: 5);
+    }
+}
+
+.container {
+    margin-top:60px;
+    .row {
+        slide {
+            height: 400px;
+            overflow: hidden;
+        }
+    }
+    .popular {
+        border-left: 2px solid $blue;
+        height: 44px;
+        margin-top: 50px;
+        span {
+            color: $blue;
+            line-height: 44px;
+            display: inline-block;
+            margin: 0px 0 0 20px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .button {
+            @include button();
+            float: right;
+        }
+    }
+    .item-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+}

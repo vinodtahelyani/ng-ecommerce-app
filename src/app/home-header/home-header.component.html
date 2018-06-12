@@ -1,0 +1,36 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-light transparent">
+        <a class="navbar-item logo" routerLink="/" angulartics2On="click" angularticsAction="LOGO CLICKED"
+	    angularticsLabel="ORCASO LOGO CLICKED" angularticsCategory="LANDING PAGE"><img src="{{imageUrl}}" alt="orcaso"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul  class="navbar-nav ml-auto">
+          <li class="nav-item active ">
+              <a class="nav-link f-12" [ngClass]="{'text-white' : !showColor, 'true-blue':showColor}" href="#pricing" angulartics2On="click" angularticsAction="PRICING CLICKED"
+				    angularticsLabel="PRICING CLICKED" angularticsCategory="LANDING PAGE" >Pricing <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link f-12" [ngClass]="{'text-white' : !showColor, 'true-blue':showColor}" routerLinkActive="active" routerLink="/contact-us" angulartics2On="click" angularticsAction="CONTACT US CLICKED"
+				    angularticsLabel="CONTACT US CLICKED" angularticsCategory="LANDING PAGE">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link f-12" [ngClass]="{'text-white' : !showColor, 'true-blue':showColor}" routerLinkActive="active" routerLink="/careers" angulartics2On="click" angularticsAction="CAREERS CLICKED"
+				    angularticsLabel="CAREERS CLICKED" angularticsCategory="LANDING PAGE">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link f-12" [ngClass]="{'text-white' : !showColor, 'true-blue':showColor}" routerLinkActive="active" routerLink="/press-kit" angulartics2On="click" angularticsAction="PRESS KIT CLICKED"
+				    angularticsLabel="PRESS KIT CLICKED" angularticsCategory="LANDING PAGE">Press Kit</a>
+            </li>
+            <li class="nav-item sign-btn mr-0">
+          <button class= "btn signin text-white" routerLinkActive="active" routerLink="/signin" angulartics2On="click" angularticsAction="SIGN IN CLICKED"
+				    angularticsLabel="SIGN IN CLICKED" angularticsCategory="LANDING PAGE" >	Sign In</button>
+            </li>
+
+        </ul>
+
+      </div>
+      </nav>
+</header>

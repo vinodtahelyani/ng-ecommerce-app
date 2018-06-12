@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 col-md-3">
+        <div class="list-group">
+          <a href="" class="list-group-item">First item</a>
+          <a href="" class="list-group-item">Second item</a>
+          <a href="" class="list-group-item">Third item</a>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9">
+        <div class="row item-row">
+          <app-item-card *ngFor="let item of items; let i=index;" id="{{item}}"></app-item-card>
+        </div>
+      </div>
+    </div>
+</div>
